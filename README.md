@@ -1,7 +1,11 @@
-# node-mongo-starter-kit
+# node-mongo-starter-cjs
+This is the ***common js version*** of the [node-mongo-starter-kit](https://github.com/code-collabo/node-mongo-starter-kit). 
+
+`const express = require('express');`
+
 The `node-mongo-starter-kit` helps to make mongoDB development in nodejs easier. Using the node-mongo-starter-kit has been made easier with the [node-mongo-cli](https://github.com/code-collabo/node-mongo-cli). While you can also choose to download/clone this starter kit directly from github, the cli let's you not only install the node-mongo-starter-kit, but also allows you to add new model & controller files with content using simple commands. Opt for the [cli](https://github.com/code-collabo/node-mongo-cli) for better experience.
 
-## How to use node-mongo-starter-kit
+## How to use node-mongo-starter-cjs
 Development environment has been set up already i.e. connection to server & db, eslint and babel transpiler. For use locally, you need to have `mongoDB` [installed](https://docs.mongodb.com/guides/server/install/) with database and collection created and mongoDB running. If you choose to use `mongoDB atlas` then you don't need to have mongoDB installed - just turn on wifi/data connection, [create database and connect to your cluster](https://docs.atlas.mongodb.com/getting-started/).
 
 **Installation:**
@@ -14,7 +18,7 @@ Development environment has been set up already i.e. connection to server & db, 
 
 Replace `insert-your-project-name` with your own project name in `srcServer > startMessage.js`.
 
-## Contributing to the starter-kit
+## Contributing to starter-cjs
 You can contribute as a `nodejs developer`, `mongoDB developer` and/or help with `documentation` & `research`. We are still working on documentation, but please go through these before you start contributing:
 * For anyone who will be writing, mentoring and/or reviewing code, in any or both of these repos: [node-mongo-cli repo](https://github.com/code-collabo/node-mongo-cli) and [node-mongo-starter-kit repo](https://github.com/code-collabo/node-mongo-starter-kit), the [first task assignment](https://github.com/code-collabo/node-mongo-cli/issues/1#issuecomment-785559734) needs to be completed & submitted first.
 * Also, please do not make changes directly in the `main` or `develop` branches. See [development environment & git workflow](https://github.com/code-collabo/node-mongo-docs/issues/2) on how to make changes to the code base and submit pull request.
@@ -27,6 +31,7 @@ Feel free to ask questions concerning anything not clear on this topic if you ha
 ## Related repositories
 This is the repository for the files and folders that the node-mongo-cli will set up for you, made by Code Collabo community. Other related repos to the cli project:
 * [node-mongo-cli](https://github.com/code-collabo/node-mongo-cli).
+* [node-mongo-starter-kit](https://github.com/code-collabo/node-mongo-starter-kit).
 * [node-mongo-docs](https://github.com/code-collabo/node-mongo-docs).
 
 ## Project resources
