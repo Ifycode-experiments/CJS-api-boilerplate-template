@@ -1,14 +1,14 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import morgan from 'morgan';
-import { router as appController } from './api/controllers/appController';
-import { router as starterController } from './api/controllers/starterController';
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+let appController = require('./api/controllers/appController');
+let starterController = require('./api/controllers/starterController');
 
 //===== Installed mongoDB's db =======
-import mongooseModuleExport from './db'; //eslint-disable-line no-unused-vars
+const mongoose = require('./db'); //eslint-disable-line no-unused-vars
 
 //===== MongoDB ATLAS db =======
-//import mongooseModuleExportAtlas from './atlas/db'; //eslint-disable-line no-unused-vars
+//const mongoose = require('./atlas/db'); //eslint-disable-line no-unused-vars
 
 const app = express();
 
@@ -36,4 +36,4 @@ app.use((error, req, res, next) => {//eslint-disable-line no-unused-vars
   });
 });
 
-export { app };
+module.exports = app;

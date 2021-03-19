@@ -1,5 +1,5 @@
-import express from 'express';
-import chalk from 'chalk';
+const express = require('express');
+const chalk = require('chalk');
 
 let router = express.Router();
 
@@ -12,4 +12,4 @@ router.get('/', (req, res) => {//eslint-disable-line no-unused-vars
   console.log( chalk.greenBright('\nApp works! \n\nRunning at http://localhost:3000/\n') );
 });
 
-export { router };
+module.exports = router;

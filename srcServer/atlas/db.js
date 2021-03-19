@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import chalk from 'chalk';
+const mongoose = require('mongoose');
+const chalk = require('chalk');
 
 /* eslint-disable no-console */
 
@@ -30,4 +30,4 @@ err => {
   }
 });
 
-export const mongooseModuleExportAtlas = mongoose;
+module.exports = mongoose;

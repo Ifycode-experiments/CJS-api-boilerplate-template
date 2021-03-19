@@ -1,13 +1,12 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import { StarterModel as Starter } from '../models/starter';
-import chalk from 'chalk';
+const express = require('express');
+let Starter = require('../models/starter');
+const chalk = require('chalk');
 
 let router = express.Router();
 
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-let ObjectId = mongoose.Types.ObjectId;
+let ObjectId = require('mongoose').Types.ObjectId;
 
 let routeName = 'starter';
 let item = `${routeName}-item`;
@@ -200,4 +199,4 @@ router.delete('/:starterId', (req, res, next) => {
   });
 });
 
-export { router };
+module.exports = router;

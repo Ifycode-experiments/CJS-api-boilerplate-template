@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import chalk from 'chalk';
+const mongoose = require('mongoose');
+const chalk = require('chalk');
 
 /* eslint-disable no-console */
 
@@ -28,4 +28,4 @@ mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, {
     }
 });
 
-export const mongooseModuleExport = mongoose;
+module.exports = mongoose;
