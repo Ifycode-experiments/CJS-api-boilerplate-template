@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import chalk from 'chalk';
+const mongoose = require('mongoose');
+const chalk = require('chalk');
 
 /* eslint-disable no-console */
 
@@ -23,11 +23,11 @@ err => {
        - ensure you didn't mispell or include wrong details.
 
   To use or see guide for installed mongoDB option:
-    => Comment out import for === MongoDB ATLAS db === in srcServer > app.js,
-      and use import for === Installed mongoDB's db === instead.
+    => Comment out "const mongoose = require('./atlas/db')" in srcServer > app.js,
+      and use "const mongoose = require('./db')" instead.
     `
     ) );
   }
 });
 
-export const mongooseModuleExportAtlas = mongoose;
+module.exports = mongoose;

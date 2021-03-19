@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import chalk from 'chalk';
+const mongoose = require('mongoose');
+const chalk = require('chalk');
 
 /* eslint-disable no-console */
 
@@ -21,11 +21,11 @@ mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, {
         - ensure you didn't mispell or include wrong details.
 
     To use or see guide for MongoDB ATLAS option:
-      => Comment out import for === Installed mongoDB's db === in srcServer > app.js,
-        and use import for === MongoDB ATLAS db === instead.
+      => Comment out "const mongoose = require('./db')" in srcServer > app.js,
+        and use "const mongoose = require('./atlas/db')" instead.
       `
     ) );
     }
 });
 
-export const mongooseModuleExport = mongoose;
+module.exports = mongoose;
