@@ -4,9 +4,9 @@
   "description": "Node, express & mongoDB backend starter files.",
   "main": "srcServer/server.js",
   "scripts": {
-    "prestart": "babel-node srcServer/startMessage.js",
+    "prestart": "node srcServer/startMessage.js",
     "start": "nodemon --exec npm-run-all --parallel open:src lint:watch",
-    "open:src": "babel-node srcServer/server.js",
+    "open:src": "node srcServer/server.js",
     "lint": "esw srcServer --color",
     "lint:watch": "npm run lint -- --watch"
   },
@@ -20,10 +20,6 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.2",
-    "babel-preset-env": "^1.7.0",
     "chalk": "^4.1.0",
     "eslint": "^7.20.0",
     "eslint-plugin-import": "^2.22.1",
