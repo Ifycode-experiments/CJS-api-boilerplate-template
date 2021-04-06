@@ -1,5 +1,5 @@
 # node-mongo-starter-cjs
-This is the ***common js version*** of the [node-mongo-starter-kit](https://github.com/code-collabo/node-mongo-starter-kit). 
+This is the ***common js template*** for the [node-mongo-starter-kit](https://github.com/code-collabo/node-mongo-starter-kit). 
 
 `const express = require('express');`
 
