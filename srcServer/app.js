@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const morgan = require('morgan');
 let appController = require('./api/controllers/appController');
 let starterController = require('./api/controllers/starterController');
@@ -13,10 +12,10 @@ const mongoose = require('./db'); //eslint-disable-line no-unused-vars
 const app = express();
 
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({
+app.use(express.urlencoded({
   extended: false
 }));
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use('/', appController);
 app.use('/starter', starterController);

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const chalk = require('chalk');
 
+require('dotenv').config();
+
 /* eslint-disable no-console */
 
 mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, {
