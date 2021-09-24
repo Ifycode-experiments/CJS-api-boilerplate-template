@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const chalk = require('chalk');
 
+require('dotenv').config();
+
 /* eslint-disable no-console */
 
 mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, {
@@ -17,11 +19,11 @@ mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, {
       console.log( chalk.yellowBright(`To use installed mongoDB option, make sure you:
       => Have mongoDB installed & running locally
         - See https://docs.mongodb.com/guides/server/install/
-      => Update srcServer > nodemon.json file with your DB name
+      => Update src > nodemon.json file with your DB name
         - ensure you didn't mispell or include wrong details.
 
     To use or see guide for MongoDB ATLAS option:
-      => Comment out "const mongoose = require('./db')" in srcServer > app.js,
+      => Comment out "const mongoose = require('./db')" in src > app.js,
         and use "const mongoose = require('./atlas/db')" instead.
       `
     ) );
