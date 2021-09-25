@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 let appController = require('./api/controllers/appController');
 let starterController = require('./api/controllers/starterController');
 
@@ -16,6 +17,7 @@ app.use(express.urlencoded({
   extended: false
 }));
 app.use(express.json());
+app.use(cors({ origin: 'http://localhost:4200' }));
 
 app.use('/', appController);
 app.use('/starter', starterController);
