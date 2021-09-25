@@ -1,7 +1,7 @@
 {
   "name": "node-mongo-cjs-kit",
   "version": "1.0.0",
-  "description": "Node, express & mongoDB backend starter files.",
+  "description": "Node js, express & mongoDB boilerplate template - the common js template.",
   "main": "src/server.js",
   "scripts": {
     "prestart": "node src/startMessage.js",
