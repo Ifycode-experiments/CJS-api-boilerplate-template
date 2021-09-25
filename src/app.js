@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 let appController = require('./api/controllers/appController');
-let starterController = require('./api/controllers/starterController');
+let demoController = require('./api/controllers/demoController');
 
 //===== Installed mongoDB's db =======
 const mongoose = require('./db'); //eslint-disable-line no-unused-vars
@@ -18,7 +18,7 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 app.use('/', appController);
-app.use('/starter', starterController);
+app.use('/demo', demoController);
 
 app.use((req, res, next) => {
   const error = new Error('Route not found!');
