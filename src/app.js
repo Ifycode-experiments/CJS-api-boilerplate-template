@@ -5,10 +5,10 @@ let appController = require('./api/controllers/appController');
 let demoController = require('./api/controllers/demoController');
 
 //===== Installed mongoDB's db =======
-const mongoose = require('./db'); //eslint-disable-line no-unused-vars
+// const mongoose = require('./db'); //eslint-disable-line no-unused-vars
 
 //===== MongoDB ATLAS db =======
-//const mongoose = require('./atlas/db'); //eslint-disable-line no-unused-vars
+const mongoose = require('./atlas/db'); //eslint-disable-line no-unused-vars
 
 const app = express();
 
